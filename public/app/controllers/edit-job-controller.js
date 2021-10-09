@@ -15,9 +15,6 @@ angular.module('myapp').controller('EditJobCtrl',function(JobFactory,$routeParam
             console.log(response)
         });
     }
-
-   
-
     vm.updateJob = function(){
         const data = {
             title: vm.title, 

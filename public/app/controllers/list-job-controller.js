@@ -5,6 +5,7 @@ angular.module('myapp').controller('ListJobCtrl',function(JobFactory,$route){
         vm.jobs = response;
     });
 
+    
     vm.deleteJob = function(id){
         JobFactory.deleteJob(id).then(function(response){
         $route.reload();

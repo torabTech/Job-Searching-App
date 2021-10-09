@@ -1,4 +1,4 @@
-angular.module('myapp').controller('AddJobCtrl',function(JobFactory,$routeParams){
+angular.module('myapp').controller('AddJobCtrl',function(JobFactory){
     const vm = this;
     console.log('reacheds')
 
