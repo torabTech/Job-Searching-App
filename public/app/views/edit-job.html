@@ -1,0 +1,35 @@
+<div style="width: 70%;margin: auto;" ng-init="vm.showJob()">
+    <form ng-submit="vm.updateJob()">
+        <fieldset>
+          <legend>Update Job</legend>
+          
+          <div class="form-group">
+            <label for="title" class="form-label mt-4">Title</label>
+            <input type="text" class="form-control"  placeholder="Enter title" ng-model="vm.title" value="vm.title">
+            <small  class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="postdate" class="form-label mt-4">Post-Date</label>
+            <input type="date" class="form-control" id="postdate" placeholder="Post-Date" ng-model="vm.postDate" value="vm.postDate">
+          </div>
+    
+          <div class="form-group">
+            <label for="salary" class="form-label mt-4">Salary</label>
+            <input type="number" class="form-control" id="salary" placeholder="Salary" ng-model="vm.salary" value="vm.salary">
+          </div>
+          
+          <div class="form-group">
+            <label for="Experience" class="form-label mt-4">Experience</label>
+            <input type="number" class="form-control" id="expreience" placeholder="Exp" ng-model="vm.expreience" value="vm.expreience">
+          </div>
+          
+          <div class="form-group">
+            <label for="Description" class="form-label mt-4">Description</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3" ng-model="vm.description">{{vm.description}}</textarea>
+          </div>
+          
+          <br>
+          <button type="submit" class="btn btn-primary">Update</button>
+        </fieldset>
+      </form>
+</div>

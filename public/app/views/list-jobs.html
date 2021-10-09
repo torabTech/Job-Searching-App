@@ -25,8 +25,8 @@
             </ul>
         </td>
         <td>{{job.expreience}}</td>
-        <td><a class="btn btn-outline-primary" ng-href="#!/jobs/add/{{job._id}}">Edit</a>
-            <a ng-href="" class="btn btn-outline-danger">Delete</a>
+        <td><a class="btn btn-outline-primary" ng-href="#!/jobs2/{{job._id}}/edit">Edit</a>
+            <a ng-click="vm.deleteJob(job._id)" class="btn btn-outline-danger">Delete</a>
         </td>
       </tr>
       
