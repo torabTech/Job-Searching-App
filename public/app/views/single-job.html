@@ -1,0 +1,11 @@
+<div class="card border-primary mb-3" style="width: 50%;margin: auto;margin-top: 20px;">
+    <div class="card-header">Job-Details</div>
+    <div class="card-body">
+      <h4 class="card-title">{{vm.job.title}}</h4>
+      <ul>
+          <li>Post-Date: {{vm.job.postDate | date}}</li>
+          <li>Salary: {{vm.job.salary | currency}}</li>
+          <li>Experience: {{vm.job.expreience}}</li>
+          <li>{{vm.job.description}}</li>
+      </ul>
+</div>

@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-route": "^1.8.2",
+    "bootstrap": "^5.1.2",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.10"
+  },
+  "name": "pr-26",
+  "version": "1.0.0",
+  "description": "Job Search Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Torab",
+  "license": "ISC"
+}

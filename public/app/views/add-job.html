@@ -1,0 +1,35 @@
+<div style="width: 70%;margin: auto;">
+    <form ng-submit="vm.addJob()">
+        <fieldset>
+          <legend>Add New Job</legend>
+          
+          <div class="form-group">
+            <label for="title" class="form-label mt-4">Title</label>
+            <input type="text" class="form-control"  placeholder="Enter title" ng-model="vm.jobTitle">
+            <small  class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="postdate" class="form-label mt-4">Post-Date</label>
+            <input type="date" class="form-control" id="postdate" placeholder="Post-Date" ng-model="vm.jobPostDate">
+          </div>
+    
+          <div class="form-group">
+            <label for="salary" class="form-label mt-4">Salary</label>
+            <input type="number" class="form-control" id="salary" placeholder="Salary" ng-model="vm.jobSalary">
+          </div>
+          
+          <div class="form-group">
+            <label for="Experience" class="form-label mt-4">Experience</label>
+            <input type="number" class="form-control" id="expreience" placeholder="Exp" ng-model="vm.jobExperience">
+          </div>
+          
+          <div class="form-group">
+            <label for="Description" class="form-label mt-4">Description</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3" ng-model="vm.jobDescription"></textarea>
+          </div>
+          
+          <br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+      </form>
+</div>

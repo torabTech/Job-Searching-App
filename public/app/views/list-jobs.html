@@ -1,0 +1,34 @@
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">PostDate</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Required Skills</th>
+        <th scope="col">Required Experience</th>
+        <th scope="col">Acctions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-active" ng-repeat="job in vm.jobs">
+        <th scope="row">
+            <a ng-href="#!/jobs/{{job._id}}">
+            {{job.title}}</a>
+        </th>
+
+
+        <td>{{job.postDate | date:'dd/MM/yyyy'}}</td>
+        <td>{{job.salary | currency}}</td>
+        <td >
+            <ul>
+                <li ng-repeat="skill in job.skills">{{skill}}</li>
+            </ul>
+        </td>
+        <td>{{job.expreience}}</td>
+        <td><a class="btn btn-outline-primary" ng-href="#!/jobs/add/{{job._id}}">Edit</a>
+            <a ng-href="" class="btn btn-outline-danger">Delete</a>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
